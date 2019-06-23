@@ -1,0 +1,17 @@
+//  КАРТА МЕСТНОСТИ
+
+section.map
+	.container
+		h2.section-title.section-title--center
+			span Контакты
+		.area-map
+			.area-map__text
+				p.map__text-item
+					| Москва, ул. Спиридоновка,
+					br
+					| д. 24/1 (вход со двора)
+				a.map__text-item(href='tel:84951913604').our-phone +7&nbsp;(495)&nbsp;191-36-04
+				p Режим работы: 10:00&nbsp;-&nbsp;22:00
+
+			//- iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A44df9b6cf1d4191fbdfa5752c7757a79a42046ff4aa0d9e54e3601d14d9931f7&amp;source=constructor" width="100%" height="400" frameborder="0" scroll="false")
+			script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A44df9b6cf1d4191fbdfa5752c7757a79a42046ff4aa0d9e54e3601d14d9931f7&amp;width=100%&amp;height=480&amp;lang=ru_RU&amp;scroll= false")

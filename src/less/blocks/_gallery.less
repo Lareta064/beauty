@@ -1,0 +1,72 @@
+/*=======================
+       ФОТОГАЛЕРЕЯ
+========================*/
+.gallery{
+	padding-top: 70px;
+	.section-title--center{
+		margin-bottom: 40px;
+		@media @md{margin-bottom: 70px;}
+		}
+}
+.owl-carousel--gallery{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.owl-carousel__item{
+		margin-left: auto;
+		margin-right: auto;
+		border-radius:10px;
+	}
+
+	@media @md{width: 80%;}
+}
+.gallery-carousel__block{
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: relative;
+	}
+.gallery-img{
+	position: relative;
+	display: block;
+}
+.gallery-img:before{
+	content: "";
+	left:;
+}
+.gallery-carousel-bg{
+	position: absolute;
+	top:15px;
+	bottom:20px;
+	border-radius:10px;
+	width: 100%;
+	background-color: #ededed;
+	@media @md{
+		top:20px;
+	bottom:30px;
+
+	}
+
+}
+
+.owl-carousel--gallery{
+	.owl-nav{
+
+		button.owl-prev{
+				outline: none;
+				position: relative;
+				left:-35px;
+				@media @md{left: -50px;}
+			}
+			button.owl-next{
+				outline: none;
+				position: relative;
+				right:-35px;
+				@media @md{right: -50px;}
+			}
+		}
+
+}

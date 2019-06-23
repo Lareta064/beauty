@@ -1,0 +1,45 @@
+//  ОТЗЫВЫ
+
+mixin review-card
+	.owl-carousel__item
+		.review-card
+			.review-card__img
+				img(src="../../img/reviews/reviewer1.png", alt="автор отзыва")
+			.review-card__title
+				.author-name Александра Ряшенцева
+				.author-info косметолог
+			.review-card__text
+				p Я безумно рада знакомству и сотрудничеству с Бьюти-коворкингу ЕЁ!
+				p Спасибо Вам за предоставленный чистый, уютный кабинет, в котором было приятно работать и принимать моих замечательных клиентов.
+				p Надеюсь на наше дальнейшее долговременное сотрудничество!
+
+section.reviews#reviews
+	.container
+		h2.section-title.owl-carousel--section.section-title--center
+			span Отзывы
+
+		.owl-carousel.owl-carousel--reviews
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card
+			.owl-carousel__item
+				+review-card

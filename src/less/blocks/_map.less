@@ -1,0 +1,52 @@
+/*=======================
+  КАРТА НА ГЛАВНОЙ
+========================*/
+.map{
+	padding-top: 100px;
+	margin-bottom: 30px;
+}
+.area-map{
+	position: relative;
+	margin-top: 50px;
+	-webkit-box-shadow: #FFF;
+	        box-shadow: #FFF;
+	box-shadow: 0px 0px 49px 0px rgba(17, 20, 24, 0.19);
+}
+.area-map__text{
+	font-weight: 300;
+	font-size: 14px;
+	position: absolute;
+	background-color: @red;
+	color:#fff;
+	padding:20px;
+	// width: 340px;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+	@media @md{
+		font-size: 18px;
+		padding: 30px 20px;
+		width: 300px;
+		top: 30px;
+		left: 30px;
+		}
+		@media @lg{
+			width: 320px;
+			top: 80px;
+			left: 45px;
+		}
+		@media @xl{
+			width: 340px;
+			top: 130px;
+			left: 75px;
+		}
+}
+.map__text-item{
+	margin-bottom: 1.2em;
+
+}
+a.map__text-item{
+	display: block;
+	color: #fff;
+	&:hover {opacity: .7;}
+}

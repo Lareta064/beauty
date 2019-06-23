@@ -1,0 +1,55 @@
+//  РАБОЧИЕ МЕСТА
+
+mixin placeCard
+	.place-card
+		.place-card__slider
+			.owl-carousel.owl-carousel--card
+				.owl-carousel__item
+					img(src="../img/cards/card-img.jpg", alt="")
+				.owl-carousel__item
+					img(src="../img/cards/card-img.jpg", alt="")
+				.owl-carousel__item
+					img(src="../img/cards/card-img.jpg", alt="")
+
+			.counter
+		.place-card-body
+			.place-card__title Рабочее место визажиста
+			.place-card__descrip
+				ul.descrip-list
+					li.descrip-list-item Гримерное зеркало
+					li.descrip-list-item Подкатной столик
+					li.descrip-list-item Кольцевая лампа
+				.descrip-prices
+					.descrip-prices__item Час 300 р
+					.descrip-prices__item Сутки 2000 р
+
+		.place-card__btn
+			a(href="page.html").page-button.card__btn-detail Подробнее
+			//- button.page-button.card__btn-detail Подробнее
+			button(type="button" data-toggle="modal" data-target="#modalForm-contact").page-button.card__btn-reserved Бронировать
+
+
+
+section.working-place#working-place
+	.container
+		.title-group.title-group--right
+			h2.section-title Рабочие места
+			.title-group__flex
+				.title-group__line
+				h2.title-2--section выберите свое пространство
+
+
+		.working-place__cards
+			.row
+				.col-md-6.col-lg-4
+					+placeCard
+				.col-md-6.col-lg-4
+					+placeCard
+				.col-md-6.col-lg-4
+					+placeCard
+				.col-md-6.col-lg-4
+					+placeCard
+				.col-md-6.col-lg-4
+					+placeCard
+				.col-md-6.col-lg-4
+					+placeCard

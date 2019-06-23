@@ -1,0 +1,73 @@
+//  ХЕДЕР НА ГЛАВНОЙ СТР.
+
+section.header-menu
+	.container
+		.header-top
+			.menu-toggle
+				button.cmn-toggle-switch.cmn-toggle-switch__htx#nav-menu-toggle
+					span toggle menu
+
+
+
+			//десктопное меню
+			nav.header-nav
+				a.header-nav__item(href="#working-place") Рабочие места
+				a.header-nav__item(href="#benefits") Условия
+				a.header-nav__item(href="#reviews") Отзывы
+				a.header-nav__item(href="#gallery") Фотогалерея
+				a.header-nav__item(href="#footer") Контакты
+
+
+
+
+			.header-phone
+				a(href="tel:89455554455") +7&nbsp;(495)&nbsp;191-&nbsp;31-50
+			button.page-button(type="button" data-toggle="modal" data-target="#modalForm-contact") Заказать звонок
+header.header#top
+	.header-logo
+		img(src="../../img/beaty-header.png", alt="logo")
+
+	.container
+		.row
+			.col-lg-8.col-xl-8
+				.header-content
+					h1.title-1 Бьюти-коворкинг:
+					h2.title-2
+						| аренда рабочих мест
+						br
+						| для мастеров индустрии красоты
+					.subtitle Почасовая и посуточная оплата в центре Москвы
+					button.page-button(type="button" data-toggle="modal" data-target="#modalForm-contact") Заказать консультацию
+	// мобильное меню
+	nav.header-nav--mobile#nav-mobile
+		a.header-nav__item(href="#working-place") Рабочие места
+		a.header-nav__item(href="#benefits") Условия
+		a.header-nav__item(href="#reviews") Отзывы
+		a.header-nav__item(href="#gallery") Фотогалерея
+		a.header-nav__item(href="#footer") Контакты
+
+//-modal заказать звонок
+//- button.btn.btn-primary(type="button" data-toggle="modal" data-target="#modalForm-contact")
+
+#modalForm-contact.custom-modal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modalForm-contact" aria-hidden="true")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			.modal-logo
+				img(src="../img/beaty-header.png", alt="logo")
+			.modal-header
+				h5#modalForm-contactTitle.modal-title Свяжитесь с нами!
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span.modalForm-close(aria-hidden="true")
+						i.fas.fa-cut
+			.modal-body.modal-form
+				form.contact-form(method="POST" action="php/mail.php")
+					input(type="hidden" name="project_name" value="beauty.ru")
+					input(type="hidden" name="admin_email" value="lareta1@yandex.ru")
+					input(type="hidden" name="email_from" value="lareta1@yandex.ru")
+
+					.contact-form__group
+						input.contact-form__input(type="text" name="name" required="" placeholder="Ваше имя")
+					.contact-form__group
+						input.contact-form__input.phone(type="text" name="phone" required="" placeholder="Ваш телефон")
+					.page-button--modal
+						input.page-button(type="submit" name="form-button" value="Отправить")

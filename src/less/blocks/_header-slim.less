@@ -1,0 +1,28 @@
+/*=======================
+  ХЕДЕР ВНУТР. СТРАНИЦЫ
+========================*/
+
+.header-slim{
+
+	height: 200px;
+	background: url(../../img/bg/bg-slim.png);
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	.container--rel{position: relative;}
+	.header-logo{
+		max-width: 80px;
+		position: absolute;
+		left: 15px;
+		bottom: -75px;
+		z-index: 10;
+		@media(min-width: 1440px){bottom: -65px;}
+		@media(min-width: 1920px){bottom: -60px;}
+	}
+
+	.header-menu.fixed{
+		.header-logo{display: none;}
+	}
+}
+
